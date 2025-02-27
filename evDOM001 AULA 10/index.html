@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Enter</title>
+    <style>
+        div#area{
+            background: green;
+            font: normal 20pt arial;
+            width: 500px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id = 'area' onmouseenter="mouse">
+        entre com o mouse Aqui!!!
+    </div>
+    <script>
+        var a = window.document.getElementById("area")
+        a.innerHTML= "olá tudo bem?"
+    </script>
+</body>
+</html>

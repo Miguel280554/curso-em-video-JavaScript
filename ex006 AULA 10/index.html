@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos DOM</title>
+    <style>
+        div#mensagem { 
+            font: normal 30pt arial;
+            background: rgb(255, 0, 0);
+            color : rgb(0, 0, 0);
+            width: 50%;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id = 'mensagem' onclick="clique()">
+        clique Aqui
+    </div>
+    <script>
+        function clique(){
+        var b = window.document.getElementById("mensagem")
+        b.innerText = "olá"
+
+    }
+    </script>
+</body>
+</html>

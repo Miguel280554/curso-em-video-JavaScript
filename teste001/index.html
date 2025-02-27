@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste RG</title>
+    <style>
+        body{
+            background-color :rgb(91, 216, 206);
+            color :  rgb(255, 255, 255);
+            font : normal 15pt arial;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Site Oficial Do seu RG</h1>
+    <p>Parabéns seu RG foi registrado no banco de dados do governo<br/> </p>
+    <script>
+        var Nome = window.prompt(`Qual seu nome?`);
+        var diaNascimento = Number(window.prompt(`Que dia você nasceu?`));
+        var mesNascimento = Number(window.prompt(`Qual o mês que você nasceu?`));
+        var anoNascimento = Number(window.prompt(`Qual ano você nasceu?`));
+        var dataAtual = new Date();
+        var diaAtual = Number(dataAtual.getDate());
+        console.log(diaAtual);
+        var mesAtual = Number(dataAtual.getMonth() + 1); 
+        var anoAtual = Number(dataAtual.getFullYear());
+        var idade1 = anoAtual - anoNascimento;
+        console.log(`Data atual: ${diaAtual}/${mesAtual}/${anoAtual}`);
+        var idade = Boolean(diaNascimento <= diaAtual && mesNascimento <= mesAtual);
+        idade1 = idade == false ? idade1 - 1 : idade1 + 0 ;
+        var nomePai = window.prompt('qual o nome do seu pai?');
+        var nomeMãe = window.prompt('qual o nome da sua mãe?');
+        var dataNascimento =(`${diaNascimento}/${mesNascimento}/${anoNascimento}`)
+        window.alert(`Seu RG foi criado com sucesso!!! O seu nome é ${Nome} sua idade é ${idade1} o nome do seu pai é ${nomePai} o nome da sua mãe é ${nomeMãe}`)
+        document.write(`<br/>Aqui estão algumas informações sobre seu RG : <br/> nome: <strong>${Nome.toUpperCase()}</strong> `);
+        document.write(`<br/>data de nascimento: <strong>${dataNascimento}</strong><br/>`)
+        document.write(`idade : <strong> ${idade1}</strong> <br/>`)
+        document.write(`nome da mãe: <strong>${nomeMãe.toUpperCase()}</strong><br/>`)
+        document.write(`nome do pai: <strong>${nomePai.toUpperCase()}</strong><br/>`)
+    </script>
+        <p><br/>Ter um RG (Registro Geral) traz várias vantagens, principalmente relacionadas à identificação e acesso a diversos serviços e direitos. Algumas das principais vantagens incluem:<br/>
+
+            <br/>Identificação oficial: O RG é um documento que serve como prova de identidade em diversas situações, como em bancos, escolas, hospitais, aluguéis e muito mais.<br/>
+            
+            <br/>Exigido para diversos serviços: Muitos serviços e benefícios exigem o RG para cadastro, como abertura de contas bancárias, matrícula em instituições de ensino e obtenção de passaportes.<br/>
+            
+            <br/>Acesso a programas governamentais: Para solicitar programas sociais e benefícios do governo, o RG pode ser necessário para garantir a identidade e a elegibilidade.<br/>
+            
+            <br/>Segurança jurídica: Ter um documento de identidade oficial evita o risco de fraudes e confusões sobre a identidade, além de ser um meio de comprovação em casos legais.<br/>
+            
+            <br/>Facilidade em viagens dentro do Brasil: O RG pode ser utilizado como documento de identificação para viagens dentro do Brasil, substituindo o passaporte em território nacional.<br/>
+            
+            <br/>Possibilidade de alterar ou atualizar informações pessoais: O RG permite que você atualize seus dados, como nome e endereço, caso haja alguma alteração importante.<br/>
+            
+            <br/>Facilidade em casos de emergência: Em situações de emergência, como acidente ou perda de documentos, ter um RG pode facilitar a comunicação e o acesso à ajuda necessária.<br/>
+            
+            <br/>Essas são algumas das vantagens que tornam o RG essencial no cotidiano de qualquer cidadão.<br/> 
+        </p>
+        <script>
+            var paragrafo1 = window.document.getElementsByTagName('p')[1]
+        paragrafo1.style.color = 'black'
+        </script>
+</body>
+</html>

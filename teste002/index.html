@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste "get date"</title>
+    <style>
+        body{
+            background-color: rgb(255, 255, 255);
+            font: normal 20pt arial;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1> hello World</h1>
+    <script>
+     var dataAtual = new Date();
+     var diaAtual = Number(dataAtual.getDate());
+     console.log(diaAtual);
+     var mesAtual = Number(dataAtual.getMonth() + 1); 
+     var anoAtual = Number(dataAtual.getFullYear());
+     console.log(`Data atual: ${diaAtual}/${mesAtual}/${anoAtual}`);
+
+
+     document.write(`o dia atual é ${diaAtual} o mes ${mesAtual} e o ano é ${anoAtual}`)
+    </script>
+    
+</body>
+</html>

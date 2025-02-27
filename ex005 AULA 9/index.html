@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iniciando estudos com o DOM</title>
+    <style>
+        body{
+            background-color: rgb(155, 155, 155);
+            font : normal 20pt arial;
+            color : white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos em DOM</h1>
+    <p> Aqui vai o resultado</p>
+    <p>aprendendo a usar <strong>DOM</strong> em JS</p>
+    <div id= 'mensagem'>CLIQUE EM MIM</div>
+    <script>
+        var corpo = window.document.body
+        var paragrafo1 = window.document.getElementsByTagName('p')[0]
+        var div = window.document.getElementById('mensagem')
+        window.document.write('O primeiro pararafo está escrito assim:' + paragrafo1.innerText)
+        paragrafo1.style.color = 'red'
+        corpo.style.background = 'black'
+        div.style.color = 'gray'
+        div.style.background = 'green'
+        div.style.width = '50%'
+        
+    </script>
+</body>
+</html>

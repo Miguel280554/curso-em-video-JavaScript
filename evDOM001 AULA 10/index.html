@@ -16,12 +16,21 @@
     </style>
 </head>
 <body>
-    <div id = 'area' onmouseenter="mouse">
+    <div id = 'area' onmouseenter="mouse()" onmouseout="mouseout()">
         entre com o mouse Aqui!!!
     </div>
     <script>
-        var a = window.document.getElementById("area")
-        a.innerHTML= "olá tudo bem?"
+        var a = window.document.getElementById('area')
+
+        function mouse(){
+        a.innerHTML= "entrou"
+        a.style.background = 'lightblue'
+    }   
+
+         function mouseout(){
+        a.innerText = 'saiu'
+        a.style.background = 'lightyellow'
+        }
     </script>
 </body>
 </html>

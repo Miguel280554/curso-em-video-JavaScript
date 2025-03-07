@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: green;
+            color: white;
+            font: normal 20pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Soma</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">Resultado </div>
+    <script>
+        function somar(){
+            var tx1 = window.document.getElementById('txtn1')
+            var tx2 = window.document.getElementById('txtn2')
+            var res = window.document.getElementById('res')
+            var n3 = Number(tx1.value)
+            var n4 = Number(tx2.value)
+            var resultado1 = n3 + n4
+            res.innerHTML = resultado1
+        }
+    </script>
+    <h1>Subtração</h1>
+    <input type="number" name="txtn3" id="txtn3"> -
+    <input type="number" name="txtn4" id="txtn4">
+    <input type="button" value="subtrair" onclick="subtrair()">
+    <div id="ris"> Resultado</div>
+    <script>
+        function subtrair(){
+            var a1 = window.document.getElementById('txtn3')
+            var a2 = window.document.querySelector('input#txtn4')
+            var ris = window.document.getElementById('ris')
+            var n1 = Number(a1.value)
+            var n2 = Number(a2.value)
+            var resultado2 = n1 - n2
+            ris.innerHTML = resultado2
+
+        }
+    </script>
+    <h1>Multiplicar</h1>
+    <input type="number" name="txtn5" id="txtn5"> X
+    <input type="number" name="txtn6" id="txtn6">
+    <input type="button" value="Multiplicação" onclick="multiplicar()">
+    <div id="ros">Resultado</div>
+    <script>
+        function multiplicar(){
+            var b1 = window.document.getElementById('txtn5')
+            var b2 = window.document.getElementById('txtn6')
+            var ros = window.document.getElementById('ros')
+            var n5 = Number(b2.value)
+            var n6 = Number(b1.value)
+            var resultado3 = n5 * n6
+            ros.innerHTML = resultado3
+        }
+    </script>
+    <h1>Divisão</h1>
+    <input type="number" name="txtn7" id="txtn7"> :
+    <input type="number" name="txtn8" id="txtn8">
+    <input type="button" value="Divisão" onclick="divisao()">
+    <div id="v">Resultado</div>
+    <script>
+        function divisao(){
+            var b1 = window.document.getElementById('txtn7')
+            var b2 = window.document.getElementById('txtn8')
+            var v = window.document.getElementById('v')
+            var n5 = Number(b1.value)
+            var n6 = Number(b2.value)
+            var resultado4 = n5 / n6
+            v.innerHTML = resultado4
+        }
+    </script>
+
+    <h1>Raiz quadrada</h1>
+    <input type="number" name="txtn9" id="txtn9">
+    <input type="button" value="Fazer calculo" onclick="raiz()">
+    <div id="r">Resultado da Raiz</div>
+
+    <script>
+        function raiz(){
+        var t1 = window.document.getElementById('txtn9')
+        var r = window.document.getElementById('r')
+        var n9 = Number(t1.value)
+        var resultado5 = Math.sqrt(n9)
+        r.innerHTML = resultado5
+    }
+    </script>
+</body>
+</html>

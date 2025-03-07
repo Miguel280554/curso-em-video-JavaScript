@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eventos DOM</title>
     <style>
+        body{
+            background-color: black;
+        }
         div#mensagem { 
             font: normal 30pt arial;
             background: rgb(255, 0, 0);
             color : rgb(0, 0, 0);
-            width: 50%;
+            width: 500px;
             height: 200px;
             line-height: 200px;
             text-align: center;
@@ -17,15 +20,28 @@
     </style>
 </head>
 <body>
-    <div id = 'mensagem' onclick="clique()">
+    <div id = 'mensagem' onclick="clique()" onmouseenter="entrou()" onmouseout="saiu()"  ondblclick="clicou()" >
         clique Aqui
     </div>
     <script>
+                var b = window.document.getElementById("mensagem")
+        b.addEventListener('click', ciclou)
         function clique(){
-        var b = window.document.getElementById("mensagem")
-        b.innerText = "olá"
-
-    }
+        b.innerText = "clicou na div"
+        b.style.background = 'blue'
+        }
+       function entrou(){
+        b.innerText = 'entrou com o mouse!!!'
+        b.style.background = 'green'
+       }
+       function saiu(){
+        b.innerText = 'saiuu com o mouse!!!'
+        b.style.background = 'red'
+       }
+       function clicou(){
+        b.innerText = 'clicou duas vezes'
+        b.style.background = 'pink'
+       }
     </script>
 </body>
 </html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>teste para saber se vota o não</h1>
+    <input type="number" name="idade" id="idade">
+    <input type="button" value="testar" onclick="cal()">
+    <div id="res"></div>
+    <script>
+        function cal(){
+        var txt = window.document.getElementById('idade')
+        var rseultado = window.document.getElementById('res')
+        var n1 = Number(txt.value)
+        if( 16 <= n1 < 18 || n1 >= 67){
+            rseultado.innerHTML = 'voto opicional'
+        } else if(n1 < 16){
+            rseultado.innerHtnl = 'não vota'
+        } else if( n1 >= 18){
+            rseultado.innerHTML = 'voto obrigatorio'
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional</title>
+    <style>
+     body{
+        background-color: black;
+        color: white;
+        font: normal 18pt arial;
+     }
+     div#resultado{
+        width: 200px;
+        right: 100px;
+     }
+    </style>
+</head>
+<body>
+    <h1>Dentran</h1>
+    velocidade do veiculo<input type="number" name="km/h" id="km/h">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="resultado"></div>
+    <script>
+        var limite = 80
+        document.write(`O limite de velocidade é ${limite}`)
+        function verificar(){
+         var txt = window.document.getElementById('km/h')
+         var resultado = window.document.querySelector('div#resultado')
+         var number = Number.parseFloat(txt.value)
+         resultado.innerHTML = `Sua velocidade atual é de ${number}km/h`
+         resultado.style.color = 'aqua'
+         if ( number > limite){
+            resultado.innerHTML += `<p>você foi multado, pois atravessou o limite de velocidade que é ${limite}km/h</p>`
+         }
+         
+        }
+    </script>
+    <h1>teste complexo</h1>
+    <input type="number" name="number2" id="number2">
+    <input type="button" value="verificar" onclick="clique()">
+    <div id="ros"></div>
+
+    <script>
+        var velocidademax = 60
+        function clique(){
+            var a1 = window.document.getElementById('number2')
+            var resultado4 = window.document.getElementById('ros')
+            var n3 = Number(a1.value)
+            if( n3 > velocidademax){
+                resultado4.innerText += `você foi multado por exesso de velocidade`
+            } else{
+                resultado4.innerText += 'parabéns você anda na velocidade certa'
+            }
+        }
+    </script>
+</body>
+</html>

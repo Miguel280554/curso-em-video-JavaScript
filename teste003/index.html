@@ -3,32 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste Idade</title>
+    <title>Document</title>
     <style>
         body{
-            background-color: rgb(204, 190, 190);
             font: normal 20pt arial;
-            color: black;
         }
     </style>
 </head>
 <body>
-    <h1>Teste</h1>
-    <script>
-        var diaNascimento = Number(window.prompt(`Que dia você nasceu?`));
-        var mesNascimento = Number(window.prompt(`Qual o mês que você nasceu?`));
-        var anoNascimento = Number(window.prompt(`Qual ano você nasceu?`));
-        var dataAtual = new Date();
-        var diaAtual = Number(dataAtual.getDate());
-        console.log(diaAtual);
-        var mesAtual = Number(dataAtual.getMonth() + 1); 
-        var anoAtual = Number(dataAtual.getFullYear());
-        var idade1 = anoAtual - anoNascimento
-        console.log(`Data atual: ${diaAtual}/${mesAtual}/${anoAtual}`);
-        var idade = Boolean(diaNascimento <= diaAtual && mesNascimento <= mesAtual)
-        idade1 = idade == false ? idade1 - 1 : idade1 + 0 ;
-        document.write(` voce tem ${idade1} anos `)
-    </script>
+    País <input type="text" name="txtn1" id="txtn1">
+    <input type="button" value="testar" onclick="calcular()">
+    <div id="res"></div>
     
+    <script>
+        var pais = 'Brasil'
+
+        function calcular(){
+            var a = window.document.getElementById('txtn1')
+            var res = document.getElementById('res')
+            var a1 = String(a.value)
+            if( a1 !== pais){
+                res.innerHTML = 'estrangeiro'
+            } else{
+                res.innerHTML = 'brasileiro'
+            }
+        }
+    </script>
+
 </body>
 </html>

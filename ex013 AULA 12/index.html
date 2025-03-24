@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="clique" onclick="a()">
+    <div id="res"></div>
+    <script>
+        var res = window.document.getElementById('res')
+        const agora = new Date();
+        const hora = agora.getHours();
+
+        
+        function a(){
+            if( hora >= 6 && hora <= 12){
+                res.innerHTML = 'bom dia'
+            } else if( hora > 12 && hora <= 18 ){
+                res.innerHTML = 'boa tarde'
+            } else if ( hora > 18 && hora <= 23){
+                res.innerHTML = 'boa noite'
+            } else if(hora >= 0 ){
+                res.innerHTML = 'boa madrugada'
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+ body{
+    background-color: gray;
+ }
+
+ header{
+    background-color: rgb(168, 168, 224);
+    width: 200px;
+    box-shadow: 5px 5px 10px rgb(26, 26, 189);
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+ }
+
+ section{
+    background-color: black;
+    width: 500px;
+    border-radius: 60px;
+    height: 500PX;
+    margin: auto;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 5px 5px 10px rgb(233, 224, 224);
+}
+
+footer{
+    text-align: center;
+}
+

@@ -1,0 +1,29 @@
+body{
+    background-color: gray;
+}
+
+header{
+    text-align: center;
+    box-shadow: 2px 2px 5px yellow;
+}
+
+section{
+    font: normal 12pt arial;
+    text-align: center;
+    background-color: aqua;
+    width: 475px;
+    height: 475px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 20px black;
+    margin: auto;
+    line-height: 25px;
+}
+
+footer{
+    text-align: center;
+}
+
+branco{
+    width: 0px;
+    height: 0px;
+}

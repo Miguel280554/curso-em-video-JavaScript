@@ -20,7 +20,9 @@ function masc(){
     var idade1 = Boolean(diaNascimento >= diaAtual && mesNascimento >= mesAtual);
     idade = idade1 == true ? idade - 1 : idade + 0 ;
 
-    if(idade < 2){
+    if(idade.value.length == 0 || idade.value > anoAtual){
+
+    } else if(idade < 2){
 
         img.src = './img/bebe.jpg'
         res.innerHTML = ` Você é um bebê de ${idade} anos!`
@@ -93,7 +95,7 @@ function masc(){
         } else{
 
             img.src = './img/vivo.jpeg'
-            res.innerHTML = `Como você está vivo?<br/>Você tem ${idade} anos!`
+            res.innerHTML = `Como você está viva?<br/>Você tem ${idade} anos!`
 
         }
         

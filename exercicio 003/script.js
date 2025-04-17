@@ -19,10 +19,8 @@ function masc(){
     var idade = anoAtual - anoNascimento 
     var idade1 = Boolean(diaNascimento >= diaAtual && mesNascimento >= mesAtual);
     idade = idade1 == true ? idade - 1 : idade + 0 ;
-
-    if(idade.value.length == 0 || idade.value > anoAtual){
-
-    } else if(idade < 2){
+   
+    if(idade < 2){
 
         img.src = './img/bebe.jpg'
         res.innerHTML = ` Você é um bebê de ${idade} anos!`

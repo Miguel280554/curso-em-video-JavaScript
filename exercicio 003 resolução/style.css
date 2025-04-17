@@ -6,12 +6,15 @@ body{
 
 header{
 
+    background-color: rgba(0, 0, 105, 0.26);
+    box-shadow: 2px 2px 3px yellow;
     font: normal 20pt arial;
     text-align: center;
 }
 
 section{
-
+    
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
     padding: 50px;
     width: 450px;
     height: 450px;

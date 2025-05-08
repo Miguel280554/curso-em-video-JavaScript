@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Select sem Array</title>
+</head>
+<body>
+
+  <h2>Escolha sua fruta favorita</h2>
+
+  <form action="https://httpbin.org/post" method="post">
+    <label for="fruta">Fruta:</label>
+    <select id="fruta" name="fruta"></select>
+    <br><br>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <script>
+    // Frutas em variáveis separadas
+    const fruta1 = "Maçã";
+    const fruta2 = "maracuja";
+    const fruta3 = "Laranja";
+
+    const select = document.getElementById("fruta");
+
+    // Criando e adicionando cada <option> manualmente
+    const op1 = document.createElement("option");
+    op1.value = fruta1.toLowerCase();
+    op1.textContent = fruta1;
+    select.appendChild(op1);
+
+    const op2 = document.createElement("option");
+    op2.value = fruta2.toLowerCase();
+    op2.textContent = fruta2;
+    select.appendChild(op2);
+
+    const op3 = document.createElement("option");
+    op3.value = fruta3.toLowerCase();
+    op3.textContent = fruta3;
+    select.appendChild(op3);
+  </script>
+
+</body>
+</html>
+

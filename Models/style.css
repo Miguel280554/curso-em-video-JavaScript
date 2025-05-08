@@ -1,9 +1,9 @@
 body{
-    background-color: rgb(59, 59, 59);
+    background-color: rgb(179, 179, 0);
  }
 
  header{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(168, 168, 224);
     width: 200px;
     box-shadow: 5px 5px 10px rgb(26, 26, 189);
     text-align: center;
@@ -12,9 +12,9 @@ body{
  }
 
  section{
-    background-color: rgb(255, 255, 255);
+    background-color: black;
     width: 500px;
-    border-radius: 20px;
+    border-radius: 60px;
     height: 500PX;
     margin: auto;
     color: white;
@@ -26,5 +26,3 @@ body{
 footer{
     text-align: center;
 }
-
-

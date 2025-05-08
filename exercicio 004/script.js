@@ -3,6 +3,8 @@ function funcao(){
     var numero = window.document.getElementById('number')
     var contagem = 1
 
+
+
     if(numero.value.length == 0){
         
         window.alert('[ERRO] Por favor digite um número!')

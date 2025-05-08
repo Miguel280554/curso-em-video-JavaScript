@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Contador</h1>
+    </header>
+
+    <section>
+
+        <div>
+            <label for="inicio">Início:</label>
+            <input type="number" name="inicio" id="inicio" class="inicio" placeholder="Digite um valor">
+            <label for="fim">Fim:  </label>
+            <input type="number" name="fim" id="fim" class="fim" placeholder="Digite um valor"> 
+            <label for="passo">Passo:</label>
+            <input type="number" name="passo" id="passo" class="passo" placeholder="Digite um valor">
+            <input type="button" value="contar" class="contar" onclick="funcao()">
+        </div>
+
+        <div class="res" id="res">
+            Aqui vai o resultado
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; Miguel</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

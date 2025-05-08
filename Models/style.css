@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(179, 179, 0);
+    background-color: rgb(77, 77, 77);
  }
 
  header{
@@ -12,7 +12,7 @@ body{
  }
 
  section{
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     width: 500px;
     border-radius: 60px;
     height: 500PX;
